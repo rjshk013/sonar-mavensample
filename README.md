@@ -27,3 +27,5 @@ or\
 ## Documentation
 
 [SonarScanner for Maven](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-maven/)
+
+change sonarcube url accordingly
