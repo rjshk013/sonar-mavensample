@@ -39,6 +39,23 @@ Integrate maven project with sonarcube
 
 3.Install SonarQube Scannerplugin to Jenkins
 
+Configure your SonarQube server:
+
+
+    Log into Jenkins as an administrator and go to Manage Jenkins > Configure System.
+    Scroll down to the SonarQube configuration section, click Add SonarQube, and add the values you're prompted for.
+    The server authentication token should be created as a 'Secret Text' credential.
+
+Job Configuration
+
+    Configure the project, and go to the Build Environment section.
+    Enable Prepare SonarScanner environment to allow the injection of SonarQube server values into this particular job. If multiple SonarQube instances are configured, you will be able to choose which one to use. Once the environment variables are available, use them in a standard Maven build step (Invoke top-level Maven targets) by setting the Goals to include, or a standard Gradle build step (Invoke Gradle script) by setting the Tasks to execute.
+
+Maven goal:
+
+$SONAR_MAVEN_GOAL
+
+
 4.On build step add below commands 
 
 clean install
@@ -46,6 +63,8 @@ clean install
 mvn sonar:sonar
 
 Reference: https://blog.knoldus.com/integrate-maven-project-sonarqube/
+
+https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/
 
 
 sonar token : 9e38781d5d71d533a2655ea87f5c7364932b5e25
