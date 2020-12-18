@@ -41,3 +41,5 @@ Integrate maven project with sonarcube
 clean install
 
 mvn sonar:sonar
+
+Reference: https://blog.knoldus.com/integrate-maven-project-sonarqube/
