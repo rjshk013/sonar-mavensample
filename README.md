@@ -29,3 +29,15 @@ or\
 [SonarScanner for Maven](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-maven/)
 
 change sonarcube url accordingly
+
+Integrate maven project with sonarcube
+--------------------------------------
+
+1.Run sonarcube server in docker using the given docker-compose file
+2.change sonarcube host url as per requirement is pom.xml
+3.Install sonarcube plugin to Jenkins
+4.On build step add below commands 
+
+clean install
+
+mvn sonar:sonar
