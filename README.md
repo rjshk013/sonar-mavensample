@@ -46,3 +46,6 @@ clean install
 mvn sonar:sonar
 
 Reference: https://blog.knoldus.com/integrate-maven-project-sonarqube/
+
+
+sonar token : 9e38781d5d71d533a2655ea87f5c7364932b5e25
