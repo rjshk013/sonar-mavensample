@@ -30,6 +30,9 @@ or\
 
 change sonarcube url accordingly
 
+
+Also install maven tool,sonarcubescanner tool from jenkins-global tools option
+
 Integrate maven project with sonarcube
 --------------------------------------
 
