@@ -39,6 +39,8 @@ Integrate maven project with sonarcube
 
 3.Install SonarQube Scannerplugin to Jenkins
 
+Login into sonarcube --my account --security--generate token & save 
+
 Configure your SonarQube server:
 
 
