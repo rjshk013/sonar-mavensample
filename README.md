@@ -56,16 +56,16 @@ Job Configuration
     Configure the project, and go to the Build Environment section.
     Enable Prepare SonarScanner environment to allow the injection of SonarQube server values into this particular job. If multiple SonarQube instances are configured, you will be able to choose which one to use. Once the environment variables are available, use them in a standard Maven build step (Invoke top-level Maven targets) by setting the Goals to include, or a standard Gradle build step (Invoke Gradle script) by setting the Tasks to execute.
 
-Maven goal:
+Maven goal:just leave blank.
 
-$SONAR_MAVEN_GOAL
+#$SONAR_MAVEN_GOAL
 
 
-4.On build step add below commands 
+4.On build step add below commands under execute shell 
 
-clean install
 
-mvn sonar:sonar
+
+mvn clean verify sonar:sonar
 
 Reference: https://blog.knoldus.com/integrate-maven-project-sonarqube/
 
